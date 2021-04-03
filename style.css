@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  background-color: hsl(210, 46%, 95%);
+  width: 100vw;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: hsl(217, 19%, 35%);
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 1rem;
+  color: hsl(217, 19%, 35%);
+}
+
+.description {
+  padding: 0.6rem 0;
+  line-height: 1.5;
+  font-size: 0.9rem;
+  color: hsl(214, 17%, 51%);
+}
+
+.date {
+  color: hsl(214, 17%, 51%);
+}
+
+.conatiner {
+  background-color: #fff;
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: row;
+  width: 50rem;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px 0px hsl(214, 17%, 51%);
+}
+
+.image-container img {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  height: 19rem;
+  width: 18rem;
+  object-fit: cover;
+  object-position: left;
+  display: block;
+}
+
+.text-container {
+  padding: 2rem 2rem 1rem 2rem;
+}
+
+.profile {
+  display: flex;
+}
+
+.profile img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
+
+.profile-info {
+  margin-left: 1rem;
+}
+
+@media screen and (max-width: 730px) {
+
+  .conatiner {
+    flex-direction: column;
+    margin: 2rem;
+  }
+
+  .image-container img {
+    height: 15rem;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+  }
+
+  h1 {
+    font-size: 100%;
+  }
+
+  h2 {
+    font-size: 100%;
+  }
+
+  .description {
+    font-size: 100%;
+  }
+}
